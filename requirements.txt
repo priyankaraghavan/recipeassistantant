@@ -2,3 +2,4 @@ streamlit
 msal
 streamlit-multipage
 openai
+streamlit-authenticator
