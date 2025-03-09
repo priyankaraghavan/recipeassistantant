@@ -1,5 +1,6 @@
 from openai import OpenAI
 import os
+import pandas as pd
 
 def create_recipe_prompt_Clean():
     prompt = f"""
@@ -74,3 +75,7 @@ def get_recipesforinput_clean(input_text):
     except Exception as e:
         print(e)
         return None
+    
+def get_student_depression_data():
+    df= pd.read_csv("student_dataset.csv")
+    return df
