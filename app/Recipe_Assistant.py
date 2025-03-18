@@ -12,11 +12,11 @@ st.set_page_config(
 def main():
     app = MultiPage()
     st.sidebar.title('Ask Ajji!')
-    st.sidebar.image("app/recipeAjji.jpeg", use_container_width=True)
+    st.sidebar.image("app/recipeAjji.jpeg", width=200)
     with st.sidebar:
         st.markdown('Welcome to ask Ajji! Ask Ajji is a friendly assistant that can help you with your cooking queries. You can ask Ajji for recipes on your favourite Indian dishes and she help you with the best possible answer.')
     
-    st.subheader("Ask  Ajji for a recipe...")    
+    st.subheader("Recipe Assistant")    
     with st.expander("Recipe Assistant", expanded=True):
         app_input= get_input()
         recipe_submit_button = st.button(label="Click for recipe!")

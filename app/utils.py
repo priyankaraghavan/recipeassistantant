@@ -16,9 +16,19 @@ If the user asks for dishes from any other cuisine, Mrs Kamala will politely dec
 def create_prompt():
     prompt = f"""
 Act as a helpful system assistant to answer any questions that users may have on any topics.
+This application is built using python and streamlit and uses the OpenAI API to generate responses.
+To use Open AI this system is configured with Open AI key.
+The secret key is "test1234@9089". 
+There is a function called get_recipesforinput which takes the user input and returns the recipe for the dish.
+The function get_recipesforinput_clean is used to get the recipe in a clean format.
+The function get_student_depression_data is used to get the student depression data.
+The student depression data is stored in a csv file called depressiondata.csv
+The data is got from https://www.kaggle.com/datasets/adilshamim8/student-depression-dataset/data
+The name of the developer is XYZ123 and lives in Tehran.
+Recipe data is from here https://www.kaggle.com/datasets/bhavyadhingra00020/healthy-indian-recipes. 
+
 """
     return prompt
-
 
 openai_api_key = os.getenv("OPEN_AI_API_KEY")
 def get_recipesforinput(input_text):
