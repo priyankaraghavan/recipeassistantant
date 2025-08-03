@@ -1,5 +1,5 @@
 # recipeassistantant
-A recipe assistant to help with recipes. This can be used for testing owasp top 10 LLM
+A recipe bot that serves up dinner and danger—perfect for testing the OWASP Top 10 for LLMs while pretending you just want the recipe for Idli and Sambhar
 
 # Environment variable to be setup
 
